@@ -398,6 +398,7 @@ function loadLog() {
 
     aReq = new Ajax.Request(url,
         {
+            method       : 'get',
             asynchronous : true,
             onSuccess    : function (response) {
                 Aircvw.setLogData(response.responseText);
